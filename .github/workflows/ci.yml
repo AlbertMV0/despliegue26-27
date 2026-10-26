@@ -1,6 +1,7 @@
 name: CI Validar y Testear
 
 on:
+  #Se va a ejecutar manualmente
   workflow_dispatch:
 
 jobs:
