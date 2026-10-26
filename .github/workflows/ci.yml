@@ -12,7 +12,6 @@ jobs:
         uses: actions/checkout@v7
 
       - name: Configurar Node.js
-        #working-directory: ./Despliegue Solo es necesario si el index.html no está en la raiz del repositorio
         uses: actions/setup-node@v7
         with:
           node-version: '24'
@@ -24,3 +23,6 @@ jobs:
       - name: Validar HTML (html-validate)
         #working-directory: ./Despliegue
         run: npx html-validate index.html
+
+      - name: Linting CSS (styleint)
+        run: nps styleinit "css/**/*.css"
