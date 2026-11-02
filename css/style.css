@@ -34,7 +34,7 @@ body {
   background: var(--card);
   padding: 2rem;
   border-radius: 12px;
-  box-shadow: 0 4px 24px rgb(0, 0, 0, 10%);
+  box-shadow: 0 4px 24px rgb(0, 0, 0);
   width: min(400px, 90%);
 }
 
