@@ -6,8 +6,10 @@ on:
 
 jobs:
   lint-and-validate:
+    # Se va a ejecutar en una marquina virtual de ubuntu
     runs-on: ubuntu-latest
     steps:
+      # Instala el repositorio en la maáquina virtual para poder acceder a él
       - name: Checkout código
         uses: actions/checkout@v7
 
@@ -25,4 +27,4 @@ jobs:
         run: npx html-validate index.html
 
       - name: Linting CSS (stylelint)
-        run: nps stylelinit "css/**/*.css"
+        run: npx stylelint "css/**/*.css"
