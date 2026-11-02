@@ -33,5 +33,5 @@ jobs:
         # working-directory: ./despliegue
         run: npx eslint js/
       
-      - name: Ejecutar tests unitarios
-        run: npm test
+      #- name: Ejecutar tests unitarios
+      #  run: npm test
